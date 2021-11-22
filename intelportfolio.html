@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hyejin Kim Intel Application Portfolio</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
-        <link rel="stylesheet" href="intelportfolio.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script> <!--chart.js 쓰기위한 스크립트-->
+        <script src="https://kit.fontawesome.com/4c64180e44.js" crossorigin="anonymous"></script> <!--font awesome의 아이콘을 쓰기위한-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  <!--부트스트랩으로 chart.js 들어갈 공간 마련-->
+        <link rel="stylesheet" href="intelportfolio.css"> <!--자체 css파일 연동-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> <!--폰트 가져옴-->
     </head>
 
     <body>
@@ -27,10 +28,10 @@
                     <h2>Intern</h2>
                     <h3>Web developer</h3>
                 </div>
-                <div class="profile-center" style="margin:20px">
-                    <a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin</a>
-                    <a href="https://github.com/matmola" target="_blank">Github</a>
-                    <a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>
+                <div class="profile-center" style="margin:20px"> <!--font awesome아이콘 사용-->
+                    <a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/matmola" target="_blank"><i class="fab fa-github fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; <!--아이콘사이 간격-->
+                    <a href="https://blog.naver.com/jinii20" target="_blank"><i class="fab fa-blogger fa-3x"></i></a>
                 </div>
         
                  
@@ -40,7 +41,7 @@
                          <h2><strong>Skills</strong></h2>
                          <div class="row">
                             <div class="col-md-5">
-                                <canvas id="myChartOne"></canvas>
+                                <canvas id="myChartOne" style="height:10vh; width:20vw"></canvas>
                             </div> 
                          </div>
                      </div>
@@ -107,7 +108,6 @@
     
         </div>
        </div>
-        
     </body>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

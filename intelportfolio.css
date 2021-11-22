@@ -39,7 +39,7 @@ body {
 .middle {
     position: absolute; left: 50%; top: 50%; 
   transform: translate(-50%, -50%); text-align: center;
-    padding-top:30vh;
+    padding-top:50vh;
   background: white;
 }
 
@@ -47,4 +47,5 @@ button {background-color:transparent;
     border-color:transparent;
     border-radius: 5px;
    }
+ 
 
