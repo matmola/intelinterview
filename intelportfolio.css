@@ -45,16 +45,11 @@ body {
 .middle {
     position: absolute; left: 50%; top: 50%;  
   transform: translate(-50%, -50%); text-align: center;
-    padding-top:50vh;
+    padding-top:20vh;
   background: white;
   margin: 0 auto;
 }
-
-.navbar {
-    position: absolute; left: 50%; right: 50%;  
-  
-  
-}
+ 
 
 button {background-color:transparent; 
     border-color:transparent;
@@ -68,4 +63,3 @@ button {background-color:transparent;
     background-color:#0071c5;
 }
  
-
