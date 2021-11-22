@@ -11,8 +11,6 @@ div{
     flex-basis:auto;
 }
 
- 
-
 .profile-pic {
 	box-shadow: 0px 4px 6px 2px lightgrey;
   border-radius: 50%
@@ -49,3 +47,4 @@ button {background-color:transparent;
     border-color:transparent;
     border-radius: 5px;
    }
+
