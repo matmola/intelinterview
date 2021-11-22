@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hyejin Kim Intel Application Portfolio</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
         <link rel="stylesheet" href="intelportfolio.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     </head>
@@ -40,11 +41,40 @@
                 <div class="Skills"class="item">
                     <h2><strong>Skills</strong></h2>
                  <!--chart.js 시작--> 
-                     
-                    <!--chart.js 끝-->
+                     <div class="container">
+                         <div class="row">
+                            <div class="col-md-5">
+                                <canvas id="myChartOne"></canvas>
+                            </div> 
+                         </div>
+                     </div>
+                     <script>
+                         let myChartOne = document.getElementById('myChartOne').getContext('2d');
+                         let barChart = new Chart(myChartOne, {
+                             type : 'bar',
+                             data : {
+                                 labels : ['HTML', 'CSS', 'JS', 'Framework', 'Basic CS', 'ENG Language', 'JPN Language'],
+                                 datasets : [{
+                                     label : 'Proficiency',
+                                     data : [
+                                         70,
+                                         50,
+                                         20,
+                                         10,
+                                         40,
+                                         95,
+                                         20
+
+                                         
+                                     ]
+                                 }]
+                             }
+                         })
+                     </script>
+                    
                      </div>   
                 </div>
-
+                <!--chart.js 끝-->
                 <div class="Activities"class="item"> 
                     <h2><strong>Activities</strong></h2>
                     <ul>
