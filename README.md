@@ -8,5 +8,4 @@
 ###### 처음에는 mysql과 php를 사용하여 웹 방문자 데이터베이스 테이블을 laboratory 웹에 지도api와 함께 띄우려고 하였음. 구름ide의 컨테이너를 이용해 cmd에서 sql로 데이터베이스를 생성하고, 테이블과 값을 추가하는 것은 가능하였음. 다만 php의 문제로 웹에 띄우는 것이 불가하게 되어 구글의 firebase로 서버를 호스팅 하고, 구글의 클라우드 데이터베이스를 가져와 지도 API를 구현해보았음.
  
  
-###### firebase 서버를 호스팅하고, git pull을 잘못하여 기존 public 폴더에 public 폴더가 하나 더 중첩되어 서버에서 문서를 열때 같은 이름의 문서들끼리 충돌하게 되었음. 이에 중복된 문서를 삭제하는 과정에서, 기존의 git history를 갖고 있던 파일들이 일부 삭제되어버렸음. 다만, index.html과 동일 문서인 intelportfolio.html의 git history는 남아있어 기존 문서들의 git history 확인 가능.
  
