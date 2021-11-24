@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hyejin Kim Intel Application Portfolio</title>
+        <title>Address Selection</title>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script> <!--chart.js 쓰기위한 스크립트-->
         <script src="https://kit.fontawesome.com/4c64180e44.js" crossorigin="anonymous"></script> <!--font awesome의 아이콘을 쓰기위한-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  <!--부트스트랩으로 chart.js 들어갈 공간 마련-->
-        <link rel="stylesheet" href="intelportfolio.css"> <!--자체 css파일 연동-->
+        <link rel="stylesheet" href="laboratory.css"> <!--자체 css파일 연동-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> <!--폰트 가져옴-->
         <script type="module">
             // Import the functions you need from the SDKs you need
@@ -38,38 +38,48 @@
 
 
     <body>
+        
+     
         <header>  </header>
 
-        <section>
         <div class="middle">
-            
-        <div class="container">
-            <div class="main"> 
-                <section id="whenSingedOut">
+            <div class="container">
+                <h1>Laboratory</h1>
+        <!--구글 지도 api 실험-->
 
-                    <button id="signInBtn">구글로 로그인 하세요</button>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./app.js"></script>
+       
+      <p> <h2 style=padding:30px;> Map API </h2>
+        <div class="card-container">
+          <div class="panel">
+            <div>
+              <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+              <span class="sb-title">Address Selection</span>
+            </div>
+            <input type="text" placeholder="Address" id="location"/>
+            <input type="text" placeholder="Apt, Suite, etc (optional)"/>
+            <input type="text" placeholder="City" id="locality"/>
+            <div class="half-input-container">
+              <input type="text" class="half-input" placeholder="State/Province" id="administrative_area_level_1"/>
+              <input type="text" class="half-input" placeholder="Zip/Postal code" id="postal_code"/>
+            </div>
+            <input type="text" placeholder="Country" id="country"/>
+            <button class="button-cta">Checkout</button>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM5AxZb5E6-ngtOO3hUmcsUilzr6pTTvc&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+      </p>
 
-                </section> 
-
-                <section id="whenSignedIn" hidden="true">
-
-                    <div id=userDetails></div>
-
-                    <button id=signOutBtn>로그아웃</button>  
-
-                </section>
-                
-         
-               
-                
-
-        </div></section>
+ 
 
 
         
     
         </div>
        </div>
+    </div></div>
     </body>
     <footer>
 

@@ -33,7 +33,7 @@
             const analytics = getAnalytics(app);
           </script>
             <script src="app.js" defer></script>
-    </head>
+        </head>
 
 
     <body>
@@ -58,61 +58,48 @@
                     <a href="laboratory.html"><i class="fas fa-flask fa-3x"></i></a>
                 </div>
         
-                <section id="whenSingedOut">
-
-                    <button id="signInBtn">구글로 로그인 하세요</button>
-
-                </section> 
-
-                <section id="whenSignedIn" hidden="true">
-
-                    <div id=userDetails></div>
-
-                    <button id=signOutBtn>로그아웃</button>  
-
-                </section>
 
                 <div class="Skills"class="item">
-                 <!--chart.js 시작--> 
-                         <h2><strong>Skills</strong></h2>
-                                <div class="chart">
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <canvas id="myChartOne"></canvas>
-                                         </div> 
-                                        </div>
-                                    </div>
-                                <script>
-                                    let myChartOne = document.getElementById('myChartOne').getContext('2d');
-                                    let barChart = new Chart(myChartOne, {
-                                        type : 'bar',
-                                        data : {
-                                            labels : ['HTML', 'CSS', 'JS', 'Framework', 'Basic CS', 'ENG Language', 'JPN Language'],
-                                            datasets : [{
-                                                label : 'Proficiency',
-                                                data : [
-                                                    70,
-                                                    50,
-                                                    15,
-                                                    10,
-                                                    40,
-                                                    95,
-                                                    30
-
-                                                    
-                                                ]
-                                            }]
-                                            
-                                        }
-                                    })
-                                </script>
-
-                                </div>
-                     
-                    
-                     </div>   
-                </div>
-                <!--chart.js 끝--> <br>
+                    <!--chart.js 시작--> 
+                            <h2><strong>Skills</strong></h2>
+                                   <div class="chart">
+                                       <div class="row">
+                                           <div class="col-md-5">
+                                               <canvas id="myChartOne"></canvas>
+                                            </div> 
+                                           </div>
+                                       </div>
+                                   <script>
+                                       let myChartOne = document.getElementById('myChartOne').getContext('2d');
+                                       let barChart = new Chart(myChartOne, {
+                                           type : 'bar',
+                                           data : {
+                                               labels : ['HTML', 'CSS', 'JS', 'Framework', 'Basic CS', 'ENG Language', 'JPN Language'],
+                                               datasets : [{
+                                                   label : 'Proficiency',
+                                                   data : [
+                                                       70,
+                                                       50,
+                                                       15,
+                                                       10,
+                                                       40,
+                                                       95,
+                                                       30
+   
+                                                       
+                                                   ]
+                                               }]
+                                               
+                                           }
+                                       })
+                                   </script>
+   
+                                   </div>
+                        
+                       
+                        </div>   
+                   </div>
+                   <!--chart.js 끝--> <br>
 
                 <div class="Education"class="item">
                     <h2><strong>Education</strong></h2>
@@ -120,6 +107,8 @@
                        Junior in <strong>Industrial Engineering & English and English Literature</strong> <br>
                        at Pukyong National University (2021.11 Currently Studying)</p>    
                 </div>  <br>
+               
+                 
 
                 <div class="Projects"class="item"> 
                     <h2><strong>Projects</strong></h2><br>
@@ -146,7 +135,7 @@
                 </div>
                 <br>
                
-                
+                 
 
         </div></section>
 
@@ -155,9 +144,11 @@
     
         </div>
        </div>
+       
     </body>
     <footer>
 
+                
         </footer>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

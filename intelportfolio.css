@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5{
 
 .row{ margin-left:auto;
      margin-right:auto;
-    
+    height:fit-content;
 }
 
 .navbar button{
@@ -59,10 +59,23 @@ button {background-color:transparent;
     border-radius: 5px;
    }
 
-.chart{ 
-}
+ .col-md-5 {
+     margin: 0 auto;
+     width:45vw;
+      
+      
 
-.skills{
-    background-color:#0071c5;
-}
+ }
  
+ #myChartOne {
+     display: block;
+     width:200px;
+     height:150px;
+     padding-left: 5vw;
+     
+ }
+
+ .chart{margin: 0 auto;}
+ 
+
+  
