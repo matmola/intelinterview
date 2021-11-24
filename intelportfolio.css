@@ -59,23 +59,19 @@ button {background-color:transparent;
     border-radius: 5px;
    }
 
- .col-md-5 {
-     margin: 0 auto;
-     width:45vw;
-      
-      
-
- }
+.chartContainer{
+    width: 80%;
+    text-align: center;
+}
  
- #myChartOne {
-     display: block;
-     width:200px;
-     height:150px;
-     padding-left: 5vw;
+    
+canvas{
+    width:100vw;
+    height:500px;
      
- }
-
- .chart{margin: 0 auto;}
+   margin-left:185px;
+    text-align: center;
+}
  
 
   
