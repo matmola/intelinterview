@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hyejin Kim Intel Application Portfolio</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script> <!--chart.js 쓰기위한 스크립트-->
+        <script src="https://kit.fontawesome.com/4c64180e44.js" crossorigin="anonymous"></script> <!--font awesome의 아이콘을 쓰기위한-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  <!--부트스트랩으로 chart.js 들어갈 공간 마련-->
+        <link rel="stylesheet" href="intelportfolio.css"> <!--자체 css파일 연동-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> <!--폰트 가져옴-->
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAzLH7ykjBw9CHy2veiCyfPoaUeMXnDDXA",
+              authDomain: "portfolio-fb9a5.firebaseapp.com",
+              projectId: "portfolio-fb9a5",
+              storageBucket: "portfolio-fb9a5.appspot.com",
+              messagingSenderId: "337134091102",
+              appId: "1:337134091102:web:c20cf1d27ad960cb5b2dcf",
+              measurementId: "G-SX4LBW4LQW"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+            <script src="app.js" defer></script>
+
+    </head>
+
+
+    <body>
+        <header>  </header>
+
+        <section>
+        <div class="middle">
+            
+        <div class="container">
+            <div class="main"> 
+                <section id="whenSingedOut">
+
+                    <button id="signInBtn">구글로 로그인 하세요</button>
+
+                </section> 
+
+                <section id="whenSignedIn" hidden="true">
+
+                    <div id=userDetails></div>
+
+                    <button id=signOutBtn>로그아웃</button>  
+
+                </section>
+                
+         
+               
+                
+
+        </div></section>
+
+
+        
+    
+        </div>
+       </div>
+    </body>
+    <footer>
+
+        </footer>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/619b4a506bb0760a4943b149/1fl39kj6p';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</html>
