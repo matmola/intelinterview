@@ -11,8 +11,10 @@
      
 }
 
- 
+.trialpic {width:40vw;}
 
+header{margin-top:500px;
+        padding-top:100px;}
 
 /*구글 지도 api 제공되는 css*/
 body {
