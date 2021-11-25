@@ -48,11 +48,6 @@ body {
     margin-top:30vh;
 }
 
-button {background-color:transparent; 
-    border-color:transparent;
-    border-radius: 5px;
-   }
-
 .chartContainer{
     width: 80%;
     text-align: center;
