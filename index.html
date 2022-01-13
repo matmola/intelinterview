@@ -7,7 +7,7 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script> <!--chart.js 쓰기위한 스크립트-->
         <script src="https://kit.fontawesome.com/4c64180e44.js" crossorigin="anonymous"></script> <!--font awesome의 아이콘을 쓰기위한-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  <!--부트스트랩으로 chart.js 들어갈 공간 마련-->
-        <link rel="stylesheet" href="intelportfolio.css"> <!--자체 css파일 연동-->
+        <link rel="stylesheet" href="index.css"> <!--자체 css파일 연동-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> <!--폰트 가져옴-->
         <script type="module">
             // Import the functions you need from the SDKs you need
@@ -15,6 +15,7 @@
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
+<<<<<<< HEAD:public/intelportfolio.html
             // Your web app's Firebase configuration
             // For Firebase JS SDK v7.20.0 and later, measurementId is optional
             const firebaseConfig = {
@@ -31,6 +32,29 @@
             const analytics = getAnalytics(app);
         </script>
     </head>
+=======
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAzLH7ykjBw9CHy2veiCyfPoaUeMXnDDXA",
+              authDomain: "portfolio-fb9a5.firebaseapp.com",
+              projectId: "portfolio-fb9a5",
+              storageBucket: "portfolio-fb9a5.appspot.com",
+              messagingSenderId: "337134091102",
+              appId: "1:337134091102:web:c20cf1d27ad960cb5b2dcf",
+              measurementId: "G-SX4LBW4LQW"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+            <script src="app.js" defer></script>
+        </head>
+
+
+>>>>>>> 64debcc620126f4f811fd5903fe70024bdba7239:index.html
     <body>
         <header>  </header>
         <section>
@@ -39,19 +63,20 @@
         <div class="container">
             <div class="main"> 
                 <div class="profile-center"class="item">
-                    <img src="https://matmola.github.io/intelinterview/images/circle_hyejinkim.png" width=200 alt="profile-pic" class="profile-pic">   
+                    <img src="images/circlehyejinkim.png" width=200 alt="profile-pic" class="profile-pic">   
                     <br>
                     <h1><strong>Hyejin Kim</strong></h1><p>jinii20@naver.com</p>
-                    <h2>Intel Intern</h2>
-                    <h3>Web developer</h3>
+                    <h2>Intern Web Developer</h2>
+                    <h3>Full of Passion <br>&<br> Desire to Grow</h3>
                 </div>
                 <div class="profile-center" style="margin:20px"> <!--font awesome아이콘 사용-->
                     <a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="https://github.com/matmola" target="_blank"><i class="fab fa-github fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; <!--아이콘사이 간격-->
                     <a href="https://blog.naver.com/jinii20" target="_blank"><i class="fab fa-blogger fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://matmola.github.io/intelinterview/laboratory.html"><i class="fas fa-flask fa-3x"></i></a>
+                    <a href="laboratory.html"><i class="fas fa-flask fa-3x"></i></a>
                 </div>
         
+<<<<<<< HEAD:public/intelportfolio.html
                 <div class="Skills"class="item">
                 <!--chart.js 시작--> 
                 <h2><strong>Skills</strong></h2>
@@ -90,12 +115,62 @@
                     </div>   
                 </div>
                 <!--chart.js 끝--> <br>
+=======
+
+                <div class="Skills"class="item">
+                    <!--chart.js 시작--> 
+                            <h2><strong>Skills</strong></h2>
+                                    
+                                       <div class="chartContainer">
+                                            
+                                               <canvas id="myChartOne"></canvas>
+                                            
+                                           </div>
+                                        
+                                   <script>
+                                       let myChartOne = document.getElementById('myChartOne').getContext('2d');
+                                       let barChart = new Chart(myChartOne, {
+                                           type : 'bar',
+                                           data : {
+                                           labels : ['HTML', 'CSS', 'JS', 'Framework', 'Basic CS', 'ENG Language', 'JPN Language'],
+                                           datasets : [{
+                                           label : 'Proficiency',
+                                           data : [
+                                                       70,
+                                                       50,
+                                                       15,
+                                                       10,
+                                                       40,
+                                                       95,
+                                                       30
+   
+                                                       
+                                                   ]
+                                               }]
+                                               
+                                           }
+                                       })
+                                   </script>
+   
+                                   </div>
+                        
+                       
+                        </div>   
+                   </div>
+                   <!--chart.js 끝--> <br>
+
+>>>>>>> 64debcc620126f4f811fd5903fe70024bdba7239:index.html
                 <div class="Education"class="item">
                     <h2><strong>Education</strong></h2>
                     <p>Graduated Hwamyeong High School 2019.02 <br> <br>
                     Junior in <strong>Industrial Engineering & English and English Literature</strong> <br>
                     at Pukyong National University (2021.11 Currently Studying)</p>    
                 </div>  <br>
+<<<<<<< HEAD:public/intelportfolio.html
+=======
+               
+
+>>>>>>> 64debcc620126f4f811fd5903fe70024bdba7239:index.html
                 <div class="Projects"class="item"> 
                     <h2><strong>Projects</strong></h2><br>
                     <p>
@@ -118,12 +193,27 @@
                     OPIc AL : 2021.07-2023.07</p> 
                 </div>
                 <br>
+<<<<<<< HEAD:public/intelportfolio.html
                 
+=======
+               
+                 
+
+>>>>>>> 64debcc620126f4f811fd5903fe70024bdba7239:index.html
         </div></section>
         </div>
+<<<<<<< HEAD:public/intelportfolio.html
     </div>
     </body>
     <footer>
+=======
+       </div>
+       
+    </body>
+    <footer>
+
+                
+>>>>>>> 64debcc620126f4f811fd5903fe70024bdba7239:index.html
         </footer>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

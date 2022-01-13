@@ -15,24 +15,25 @@ div{
 	box-shadow: 0px 4px 6px 2px lightgrey;
   border-radius: 50%;
 }
-h1, h2, h3, h4, h5{
+h1, h2,   h4, h5{
 	color:#4A4E69  ;
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
     font-size:25px;
 }
 
-.row{ margin-left:auto;
-     margin-right:auto;
-    
+h3{
+    color:#4A4E69  ;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+    font-size:20px;
 }
 
-.navbar button{
-    background-color:transparent; 
-    border-color:transparent;
-    border-radius: 5px;
-    margin-bottom:5vh;
+.row{ margin-left:auto;
+     margin-right:auto;
+    height:fit-content;
 }
+
 
 body {
         height: 100%;
@@ -54,15 +55,19 @@ body {
     margin-top:30vh;
 }
 
-button {background-color:transparent; 
-    border-color:transparent;
-    border-radius: 5px;
-   }
-
-.chart{ 
-}
-
-.skills{
-    background-color:#0071c5;
+.chartContainer{
+    width: 80%;
+    text-align: center;
 }
  
+    
+canvas{
+    width:100vw;
+    height:500px;
+     
+   margin-left:185px;
+    text-align: center;
+}
+ 
+
+  
