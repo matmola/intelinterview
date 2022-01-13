@@ -9,14 +9,30 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  <!--부트스트랩으로 chart.js 들어갈 공간 마련-->
         <link rel="stylesheet" href="intelportfolio.css"> <!--자체 css파일 연동-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> <!--폰트 가져옴-->
-         
-
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+            apiKey: "AIzaSyAzLH7ykjBw9CHy2veiCyfPoaUeMXnDDXA",
+            authDomain: "portfolio-fb9a5.firebaseapp.com",
+            projectId: "portfolio-fb9a5",
+            storageBucket: "portfolio-fb9a5.appspot.com",
+            messagingSenderId: "337134091102",
+            appId: "1:337134091102:web:c20cf1d27ad960cb5b2dcf",
+            measurementId: "G-SX4LBW4LQW"
+            };
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
     </head>
-
-
     <body>
         <header>  </header>
-
         <section>
         <div class="middle">
             
@@ -36,15 +52,14 @@
                     <a href="https://matmola.github.io/intelinterview/laboratory.html"><i class="fas fa-flask fa-3x"></i></a>
                 </div>
         
-                 
                 <div class="Skills"class="item">
-                 <!--chart.js 시작--> 
-                         <h2><strong>Skills</strong></h2>
+                <!--chart.js 시작--> 
+                <h2><strong>Skills</strong></h2>
                                 <div class="chart">
                                     <div class="row">
                                         <div class="col-md-5">
                                             <canvas id="myChartOne"></canvas>
-                                         </div> 
+                                        </div> 
                                         </div>
                                     </div>
                                 <script>
@@ -63,7 +78,6 @@
                                                     40,
                                                     95,
                                                     30
-
                                                     
                                                 ]
                                             }]
@@ -71,58 +85,45 @@
                                         }
                                     })
                                 </script>
-
                                 </div>
-                     
                     
-                     </div>   
+                    </div>   
                 </div>
                 <!--chart.js 끝--> <br>
-
                 <div class="Education"class="item">
                     <h2><strong>Education</strong></h2>
                     <p>Graduated Hwamyeong High School 2019.02 <br> <br>
-                       Junior in <strong>Industrial Engineering & English and English Literature</strong> <br>
-                       at Pukyong National University (2021.11 Currently Studying)</p>    
+                    Junior in <strong>Industrial Engineering & English and English Literature</strong> <br>
+                    at Pukyong National University (2021.11 Currently Studying)</p>    
                 </div>  <br>
-
                 <div class="Projects"class="item"> 
                     <h2><strong>Projects</strong></h2><br>
                     <p>
-                         <a href="https://github.com/onegqueen/MANO ">Information Website for PKNU Students</a> <br><br>
-                         <a href="https://github.com/matmola/MyFirstPortfolio">My First Portfolio Website</a>  </p>
-                     
+                        <a href="https://github.com/onegqueen/MANO ">Information Website for PKNU Students</a> <br><br>
+                        <a href="https://github.com/matmola/MyFirstPortfolio">My First Portfolio Website</a>  </p>
                 </div>
                 <br>
-
                 <div class="Activities"class="item"> 
                     <h2><strong>Activities</strong></h2> <br>
                     <p>
-                         <a href="https://www.cbc.ca/news/canada/british-columbia/south-korea-veterans-1.5429493">PKNU UN Supporters</a> <br><br>
-                          
+                        <a href="https://www.cbc.ca/news/canada/british-columbia/south-korea-veterans-1.5429493">PKNU UN Supporters</a> <br><br>
+                        
                         <a href="https://github.com/pknu-wap"> PKNU WAP (Web Programming Club)</a> </p>
-                     
+                    
                 </div>
                 <br>
                 <div class="Certificates"class="item">
                     <h2><strong>Certificates</strong></h2><br>
                     <p>TOEIC 925 : 2021.07-2023.09<br><br>
-                       OPIc AL : 2021.07-2023.07</p> 
+                    OPIc AL : 2021.07-2023.07</p> 
                 </div>
                 <br>
-               
                 
-
         </div></section>
-
-
-        
-    
         </div>
-       </div>
+    </div>
     </body>
     <footer>
-
         </footer>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -137,6 +138,5 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-
     
 </html>
